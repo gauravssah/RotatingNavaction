@@ -205,4 +205,12 @@ body {
         transform: rotate(-25deg) translate(159%, -14%);
         transition: all 700ms ease-in;
     }
+
+    .navaction {
+        position: absolute;
+        color: rgb(255, 255, 255);
+        margin-bottom: 3rem;
+        z-index: -50;
+
+    }
 }
