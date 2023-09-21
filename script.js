@@ -1,18 +1,26 @@
-let Rotatebtn = document.querySelector(".fa-bars")
-let websitecontainer = document.querySelector(".websitecontainer")
-let hiddennavbar = document.querySelector(".hiddennavbar")
+let hambar = document.querySelector('.fa-bars');
+let xmark = document.querySelector('.fa-xmark');
+let bar = document.querySelector('.bar');
+let maincontainer = document.querySelector('.maincontainer');
+let navaction = document.querySelector('.navaction');
 
-Rotatebtn.addEventListener("click", () => {
-    if (websitecontainer.classList.contains("rotate")) {
-        websitecontainer.classList.remove("rotate")
-        websitecontainer.classList.add("unrotate")
-        hiddennavbar.classList.add("hidenavbar")
-        hiddennavbar.classList.remove("showingnav")
-    } else {
-        websitecontainer.classList.add("rotate")
-        websitecontainer.classList.remove("unrotate")
-        hiddennavbar.classList.add("showingnav")
-        hiddennavbar.classList.remove("hidenavbar")
-    }
-
+hambar.addEventListener("click", () => {
+    bar.classList.remove("unrotate")
+    bar.classList.add("rotate");
+    maincontainer.classList.add("boxrotate")
+    maincontainer.classList.remove("boxUnrotate")
+    navaction.classList.add("navactionshoe")
 })
+
+xmark.addEventListener("click", () => {
+    bar.classList.remove("rotate")
+    bar.classList.add("unrotate")
+    maincontainer.classList.remove("boxrotate")
+    maincontainer.classList.add("boxUnrotate")
+    navaction.classList.remove("navactionshoe")
+})
+
+
+
+
+
