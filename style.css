@@ -144,6 +144,11 @@ body {
     margin-top: 2rem;
 }
 
+.navaction li:hover {
+    /* opacity: 0.8; */
+    text-shadow: 1px 1px 8px rgb(255, 166, 0);
+}
+
 .navaction .home {
     margin-left: 2rem;
 }
