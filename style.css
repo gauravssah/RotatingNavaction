@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+
+.container {
+    width: 98vw;
+    height: 100vh;
+    position: relative;
+}
+
+.uppercontainer {
+    display: flex;
+}
+
+.leftnavbtn {
+    width: 15%;
+    /* background-color: red; */
+    font-size: 3rem;
+
+}
+
+.leftnavbtn i {
+    font-weight: 900;
+    margin: 0rem 0rem;
+    background: #ff9200;
+    padding: 5rem 5rem;
+    border-bottom-right-radius: 65%;
+    font-size: 5rem;
+    cursor: pointer;
+    position: sticky;
+    top: 0px;
+}
+
+.websitecontainer {
+    width: 100%;
+    font-size: 3rem;
+    padding: 4rem 2rem;
+    background-color: white;
+}
+
+.websitecontainer h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.websitecontainer p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.websitecontainer h3 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.imagecontainer {
+    width: 90%;
+    margin-bottom: 2rem;
+}
+
+.imagecontainer img {
+    width: 100%;
+}
+
+.rotate {
+    transform-origin: top;
+
+    transform: rotate(-19deg);
+    overflow: hidden;
+    /* transform: translate(20%, 10%); */
+    margin-left: -12rem;
+    margin-top: -19rem;
+    transition: transform 0.4s ease-in;
+    z-index: -99;
+}
+
+.unrotate {
+    transform-origin: top;
+
+    transform: rotate(0deg);
+    overflow: hidden;
+    /* transform: translate(20%, 10%); */
+    /* margin-left: -12rem; */
+    /* margin-top: -19rem; */
+    transition: transform 0.4s ease-in;
+    z-index: -99;
+}
+
+.showingnav {
+    width: fit-content;
+    padding: 8rem;
+    height: 125%;
+    position: absolute;
+    top: -5rem;
+    transform: rotate(-19deg);
+    margin-left: 10rem;
+    z-index: -100;
+    position: fixed;
+    top: 0;
+    transition: all 0.4s ease-in;
+
+}
+
+.hidenavbar {
+    transform: translateX(-50%);
+    transition: all 0.5s ease-in;
+}
+
+.listitem {
+    position: absolute;
+    top: 47rem;
+    width: 100%;
+    left: 4rem;
+
+}
+
+.listitem li {
+    list-style: none;
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
